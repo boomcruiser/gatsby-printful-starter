@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    overflow-x: hidden;
+    @apply dark:bg-gray-900
+}
+ 
+#gatsby-focus-wrapper{
+    @apply flex flex-col h-full;
+}
+.pageContainer{
+   min-height:  calc(100vh - 128px);
+}
+.snipcart-cart__secondary-header{
+    @apply dark:bg-gray-900 dark:text-white
+}
+.snipcart-cart__secondary-header button{
+    @apply dark:text-white dark:border-gray-800
+}
+
+
+.snipcart-cart--edit .snipcart-cart__footer,.snipcart-cart--edit .snipcart-cart__content,.snipcart-cart--edit .snipcart-item-list{
+    @apply dark:bg-gray-800
+}
+.snipcart__box,.snipcart-modal__container,.snipcart-featured-payment-methods__title,.snipcart-item-line,.snipcart-modal,.snipcart-cart-header,.snipcart-cart__footer,.snipcart-item-list,.snipcart-cart__content{
+    @apply dark:text-gray-100 dark:bg-gray-800
+
+}
+.snipcart-cart-summary-item,.snipcart-item-quantity__button,.snipcart__font--bold,.snipcart-form__label,.snipcart__font--std,.snipcart-cart-summary-fees__title,.snipcart-cart-summary-fees__amount,.snipcart-cart-summary-fees__notice{
+    @apply dark:text-gray-100
+}
+.snipcart__box--badge,.snipcart-shipping-rates-list-item,.snipcart-cart-summary,.snipcart-form,.snipcart-cart-summary__content,.snipcart-checkout-step,.snipcart-form__select,.snipcart-item-quantity__quantity,.snipcart-empty-cart,.snipcart-layout__content--side{
+    @apply dark:text-gray-100 dark:bg-gray-800
+
+}
+
+.snipcart__box--gray{
+   @apply dark:bg-gray-700;
+}
+form.snipcart-payment{
+    @apply dark:bg-gray-300
+}
+.snipcart .snipcart-form{
+    @apply ring-purple-700  ring-2;
+}
+.snipcart .snipcart-cart-button--highlight{
+    --tw-bg-opacity: 1;
+    background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+    background-image: none;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.snipcart .snipcart__actions--link{
+    --tw-text-opacity: 1;
+    margin-top:1rem;
+    font-weight: bold;
+    color: rgba(109, 40, 217, var(--tw-text-opacity));
+}
+.snipcart-empty-cart button,.snipcart-input{
+    @apply dark:text-white dark:bg-transparent
+}
+.snipcart-typeahead__suggestions{
+    @apply dark:text-white dark:bg-gray-900
+}
+.snipcart-typeahead__suggestion--active{
+   @apply dark:bg-gray-700
+}
+.snipcart .snipcart-input__input:-webkit-autofill{
+    @apply dark:bg-gray-700 dark:ring-gray-400 dark:ring-8 dark:ring-inset !important;
+}
+.snipcart .snipcart-input:focus-within,.snipcart .snipcart-textbox--focus,.snipcart .snipcart-shipping-rates-list-item--highlight{
+    @apply dark:ring-gray-700 dark:ring-2 border-purple-700
+}
+.snipcart .snipcart-form-radio:checked+label:before,.snipcart .snipcart__box--badge-highlight{
+    background:none;
+    @apply bg-purple-700
+}
+.snipcart .snipcart__icon--blue-light{
+    @apply text-purple-500;
+}
+.snipcart .snipcart__icon--blue-dark{
+    @apply text-purple-700;
+}
+.snipcart .snipcart__icon--blue-light path,.snipcart .snipcart__icon--blue-dark path,.snipcart-cart__secondary-header button svg path,.snipcart-item-quantity__button path,.snipcart-featured-payment-methods__title-icon path{
+    @apply fill-current
+}
+
+.snipcart__button--icon{
+    @apply dark:border-gray-700;
+}
+.snipcart-scrollbar::-webkit-scrollbar-thumb {
+    @apply dark:bg-gray-400;
+}
+
+
+/* CSS FOR BLOGS */
+.blog h1{
+    @apply text-4xl
+}
+.blog h2{
+    @apply text-3xl
+}
+.blog h3{
+    @apply text-2xl
+}
+.blog h4{
+    @apply text-xl
+}
+.blog h5{
+    @apply text-lg
+}
+.blog h6 {
+    @apply text-sm
+}
+.blog p{
+    @apply my-3;
+}
+.blog blockquote{
+    @apply relative p-4 text-xl italic border-l-4 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-200  bg-gray-100 text-gray-600 border-gray-500
+}
+.blog{
+    @apply  max-w-3xl w-full mx-auto dark:text-white py-4 
+}

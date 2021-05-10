@@ -1,0 +1,18 @@
+.variantOption.size::after{
+    @apply bg-purple-100 dark:bg-gray-700  absolute inset-0 rounded-full;
+    content:"";
+}
+.variantOption.size:hover::after,.variantOption.size.active::after{
+    @apply bg-purple-700 ;
+}
+.variantOption{
+    @apply w-9 h-9 relative rounded-full hover:text-white ring-2 ring-offset-2 ring-purple-100  hover:ring-purple-700;
+    @apply mb-3 mr-3;
+}
+.variantOption.size.active{
+    @apply text-white;
+}
+ 
+.variantOption.active{
+    @apply  ring-2 ring-purple-700;
+}
