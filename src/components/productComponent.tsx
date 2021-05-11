@@ -1,17 +1,14 @@
-import React, { Dispatch, SetStateAction, useContext, useState, useEffect } from 'react';
+import React, { Dispatch, SetStateAction, useState, useEffect } from 'react';
 import { GatsbyImage as Img, getImage, getSrc } from 'gatsby-plugin-image';
 // import { ProductNode } from '../types';
 import * as styles from './productStyle.module.css'
-import { SelectedVariantContext } from '../context/selectedVariantProvider';
 import { useToasts } from 'react-toast-notifications';
-import { SnipcartContext } from 'gatsby-plugin-snipcart-advanced/store';
 import { ProductNode, VariantOptionType } from '../types';
 
 const ProductComponent: React.FC<{ product: ProductNode }> = ({ product }) => {
 	// const [variantModels, setVariantModels] = useState(new WeakMap());
 	const { addToast } = useToasts();
-	const snipcartContext = useContext(SnipcartContext);
-	const { selectedVariant, setSelectedVariant } = useContext(SelectedVariantContext);
+	const [selectedVariant, setSelectedVariant] = useState(null);
 	const image = selectedVariant && getImage(selectedVariant.variantImage as any);
 	const stockString = selectedVariant?.catalogVariant?.in_stock ? 'In stock' : 'Out of stock';
 	const [options, setOptions] = useState({ color: null, size: null })

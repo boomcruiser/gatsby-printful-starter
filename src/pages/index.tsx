@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import ProductComponent from '../components/productComponent';
-import SelectedVariantProvider from '../context/selectedVariantProvider';
 import { CustomerReviewList } from '../components/customerReviewComponent';
 import Layout from '../layout';
 
@@ -67,7 +66,7 @@ const IndexPage = ({ data }) => {
 			<section className="grid grid-cols-12">
 				<main className='col-span-12 xl:col-start-1 xl:col-span-8'>
 					<section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
-						{products.map((item) => <SelectedVariantProvider key={item.id}> <ProductComponent product={item} /></SelectedVariantProvider>)}
+						{products.map((item) => <ProductComponent key={item.id} product={item} />)}
 					</section>
 
 				</main>
