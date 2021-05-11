@@ -5397,13 +5397,6 @@ download@^7.1.0:
     p-event "^2.1.0"
     pify "^3.0.0"
 
-dts-css-modules-loader@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/dts-css-modules-loader/-/dts-css-modules-loader-1.2.1.tgz#94229df2473765d61fe7a4585ee6e5805f23e986"
-  integrity sha512-sVx6NEdJeQ3tcY3WgBGQYSlIvvCuhJPmhvZkdV+1FtZG8G9US3zBpNzdAl7oETFq/sim0kKbWWEmnk7141g7dg==
-  dependencies:
-    loader-utils "^2.0.0"
-
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -6703,13 +6696,6 @@ gatsby-plugin-breakpoints@^1.3.3:
   integrity sha512-MwnVxmf1SA6H/dECC8DT1pQZPHYSoxrXGxH5k1H33qLHUrrSXIDR4dfqO0c/gZX5mI2uHjTTPs+9+xuxotPZ3g==
   dependencies:
     "@babel/runtime" "^7.13.10"
-
-gatsby-plugin-dts-css-modules@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-dts-css-modules/-/gatsby-plugin-dts-css-modules-2.0.0.tgz#31143b87eb24fadc88f959464e13edab8feef9e4"
-  integrity sha512-HNmjXcwznfm8SOVT2hFMQzvZ4LWWVzIAqIWr2KRIlXYhAByLW6rjGuYEVcyiUxdhS6A11pSrUndOccrH2digKQ==
-  dependencies:
-    dts-css-modules-loader "1.2.1"
 
 gatsby-plugin-graphql-codegen@^2.7.1:
   version "2.7.1"

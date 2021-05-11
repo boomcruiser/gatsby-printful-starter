@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction, useContext, useState, useEffect } from 'react';
 import { GatsbyImage as Img, getImage } from 'gatsby-plugin-image';
 // import { ProductNode } from '../types';
-import * as Styles from './productStyle.module.css'
+import * as styles from './productStyle.module.css'
 import { SelectedVariantContext } from '../context/selectedVariantProvider';
 import { useToasts } from 'react-toast-notifications';
 import { SnipcartContext } from 'gatsby-plugin-snipcart-advanced/store';
@@ -159,7 +159,7 @@ const VariantCheckbox = ({ variantOption, type, variant, checkedVal, setCheckedV
 	// console.log({ checkedVal, type: variantOption[type], eq: checkedVal === variantOption[type] });
 	// console.log({ variantOption });
 	const isChecked = checkedVal === variantOption[type];
-	return <label style={variantOption.color ? { background: variantOption.color_code } : {}} className={`${Styles.variantOption} ${variantOption.size ? Styles.size : ''} ${isChecked ? Styles.active : ''}`}>
+	return <label style={variantOption.color ? { background: variantOption.color_code } : {}} className={`${styles.variantOption} ${variantOption.size ? styles.size : ''} ${isChecked ? styles.active : ''}`}>
 		<input
 			className="hidden"
 			name={type}

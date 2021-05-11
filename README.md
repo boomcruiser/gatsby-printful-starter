@@ -16,7 +16,7 @@
 yarn install
 ```
 ## Config
-You can configure the project using .env file. Following config options are available.
+You have to create a .env file in your root folder. You can configure the project using .env file. Following config options are available.
 ```
 PRINTFUL_API_KEY=
 SNIPCART_KEY=
@@ -53,4 +53,4 @@ You can also help me with my insomina and
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_=https://github.com/gatsbyjs/gatsby-starter-minimal)

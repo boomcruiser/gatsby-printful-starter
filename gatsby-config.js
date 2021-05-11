@@ -88,7 +88,6 @@ module.exports = {
             },
         },
 
-		`gatsby-plugin-graphql-codegen`,
-		'gatsby-plugin-dts-css-modules'
+		`gatsby-plugin-graphql-codegen`
 	]
 };
