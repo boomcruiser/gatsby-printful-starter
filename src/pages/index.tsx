@@ -65,9 +65,9 @@ const IndexPage = ({ data }) => {
 
 			<section className="grid grid-cols-12">
 				<main className='col-span-12 xl:col-start-1 xl:col-span-8'>
-					<section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
-						<ProductList products={products} />
-					</section>
+
+					<ProductList products={products} />
+
 
 				</main>
 				<aside className="border-l-2 dark:border-gray-600 col-span-12 xl:col-start-9 xl:col-span-4 p-4">
