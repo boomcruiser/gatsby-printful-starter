@@ -4,6 +4,11 @@ import { GatsbyImage as Img, getImage, getSrc } from 'gatsby-plugin-image';
 import * as styles from './productStyle.module.css'
 import { useToasts } from 'react-toast-notifications';
 import { ProductNode, VariantOptionType } from '../types';
+export const ProductList: React.FC<{ products: ProductNode[] }> = ({ products }) => {
+	return <>
+		{products.map((item) => <ProductComponent key={item.id} product={item} />)}
+	</>
+}
 
 const ProductComponent: React.FC<{ product: ProductNode }> = ({ product }) => {
 	// const [variantModels, setVariantModels] = useState(new WeakMap());
