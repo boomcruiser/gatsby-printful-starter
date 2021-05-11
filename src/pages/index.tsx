@@ -40,7 +40,7 @@ export const query = graphql`
 				featuredImage{
 					childImageSharp {
 				 
-						gatsbyImageData(layout: FULL_WIDTH,placeholder: BLURRED)
+						gatsbyImageData(layout:CONSTRAINED,width:200,placeholder:BLURRED)
 					}
 				}
 				customer
