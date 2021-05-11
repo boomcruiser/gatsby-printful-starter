@@ -691,10 +691,10 @@ export type PrintfulCatalogVariant = Node & {
 };
 
 export type PrintfulCatalogVariantAvailability_Regions = {
-  MX?: Maybe<Scalars['String']>;
-  EU?: Maybe<Scalars['String']>;
   US?: Maybe<Scalars['String']>;
+  MX?: Maybe<Scalars['String']>;
   CA?: Maybe<Scalars['String']>;
+  EU?: Maybe<Scalars['String']>;
 };
 
 export type PrintfulCatalogVariantAvailability_Status = {
@@ -810,8 +810,6 @@ export type PrintfulCatalogProductOptions = {
 };
 
 export type PrintfulCatalogProductOptionsValues = {
-  white?: Maybe<Scalars['String']>;
-  black?: Maybe<Scalars['String']>;
   flat?: Maybe<Scalars['String']>;
   _3d?: Maybe<Scalars['String']>;
   both?: Maybe<Scalars['String']>;
@@ -830,6 +828,8 @@ export type PrintfulCatalogProductOptionsValues = {
   _6B5294?: Maybe<Scalars['String']>;
   _01784E?: Maybe<Scalars['String']>;
   _7BA35A?: Maybe<Scalars['String']>;
+  white?: Maybe<Scalars['String']>;
+  black?: Maybe<Scalars['String']>;
 };
 
 export type PrintfulCatalogProductOptionsAdditional_Price_Breakdown = {
@@ -3931,10 +3931,10 @@ export type PrintfulCountrySortInput = {
 };
 
 export type PrintfulCatalogVariantAvailability_RegionsFilterInput = {
-  MX?: Maybe<StringQueryOperatorInput>;
-  EU?: Maybe<StringQueryOperatorInput>;
   US?: Maybe<StringQueryOperatorInput>;
+  MX?: Maybe<StringQueryOperatorInput>;
   CA?: Maybe<StringQueryOperatorInput>;
+  EU?: Maybe<StringQueryOperatorInput>;
 };
 
 export type PrintfulCatalogVariantAvailability_StatusFilterListInput = {
@@ -4085,10 +4085,10 @@ export type PrintfulCatalogVariantFieldsEnum =
   | 'image'
   | 'price'
   | 'in_stock'
-  | 'availability_regions___MX'
-  | 'availability_regions___EU'
   | 'availability_regions___US'
+  | 'availability_regions___MX'
   | 'availability_regions___CA'
+  | 'availability_regions___EU'
   | 'availability_status'
   | 'availability_status___region'
   | 'availability_status___status'
@@ -4487,8 +4487,6 @@ export type PrintfulCatalogProductOptionsFilterInput = {
 };
 
 export type PrintfulCatalogProductOptionsValuesFilterInput = {
-  white?: Maybe<StringQueryOperatorInput>;
-  black?: Maybe<StringQueryOperatorInput>;
   flat?: Maybe<StringQueryOperatorInput>;
   _3d?: Maybe<StringQueryOperatorInput>;
   both?: Maybe<StringQueryOperatorInput>;
@@ -4507,6 +4505,8 @@ export type PrintfulCatalogProductOptionsValuesFilterInput = {
   _6B5294?: Maybe<StringQueryOperatorInput>;
   _01784E?: Maybe<StringQueryOperatorInput>;
   _7BA35A?: Maybe<StringQueryOperatorInput>;
+  white?: Maybe<StringQueryOperatorInput>;
+  black?: Maybe<StringQueryOperatorInput>;
 };
 
 export type PrintfulCatalogProductOptionsAdditional_Price_BreakdownFilterInput = {
@@ -4823,10 +4823,10 @@ export type PrintfulProductFieldsEnum =
   | 'variants___catalogVariant___image'
   | 'variants___catalogVariant___price'
   | 'variants___catalogVariant___in_stock'
-  | 'variants___catalogVariant___availability_regions___MX'
-  | 'variants___catalogVariant___availability_regions___EU'
   | 'variants___catalogVariant___availability_regions___US'
+  | 'variants___catalogVariant___availability_regions___MX'
   | 'variants___catalogVariant___availability_regions___CA'
+  | 'variants___catalogVariant___availability_regions___EU'
   | 'variants___catalogVariant___availability_status'
   | 'variants___catalogVariant___availability_status___region'
   | 'variants___catalogVariant___availability_status___status'
@@ -5728,10 +5728,10 @@ export type PrintfulVariantFieldsEnum =
   | 'catalogVariant___image'
   | 'catalogVariant___price'
   | 'catalogVariant___in_stock'
-  | 'catalogVariant___availability_regions___MX'
-  | 'catalogVariant___availability_regions___EU'
   | 'catalogVariant___availability_regions___US'
+  | 'catalogVariant___availability_regions___MX'
   | 'catalogVariant___availability_regions___CA'
+  | 'catalogVariant___availability_regions___EU'
   | 'catalogVariant___availability_status'
   | 'catalogVariant___availability_status___region'
   | 'catalogVariant___availability_status___status'
@@ -5872,8 +5872,6 @@ export type PrintfulVariantFieldsEnum =
   | 'catalogProduct___options___id'
   | 'catalogProduct___options___title'
   | 'catalogProduct___options___type'
-  | 'catalogProduct___options___values___white'
-  | 'catalogProduct___options___values___black'
   | 'catalogProduct___options___values___flat'
   | 'catalogProduct___options___values____3d'
   | 'catalogProduct___options___values___both'
@@ -5892,6 +5890,8 @@ export type PrintfulVariantFieldsEnum =
   | 'catalogProduct___options___values____6B5294'
   | 'catalogProduct___options___values____01784E'
   | 'catalogProduct___options___values____7BA35A'
+  | 'catalogProduct___options___values___white'
+  | 'catalogProduct___options___values___black'
   | 'catalogProduct___options___additional_price_breakdown___flat'
   | 'catalogProduct___options___additional_price_breakdown____3d'
   | 'catalogProduct___options___additional_price_breakdown___both'
@@ -6377,8 +6377,6 @@ export type PrintfulCatalogProductFieldsEnum =
   | 'options___id'
   | 'options___title'
   | 'options___type'
-  | 'options___values___white'
-  | 'options___values___black'
   | 'options___values___flat'
   | 'options___values____3d'
   | 'options___values___both'
@@ -6397,6 +6395,8 @@ export type PrintfulCatalogProductFieldsEnum =
   | 'options___values____6B5294'
   | 'options___values____01784E'
   | 'options___values____7BA35A'
+  | 'options___values___white'
+  | 'options___values___black'
   | 'options___additional_price_breakdown___flat'
   | 'options___additional_price_breakdown____3d'
   | 'options___additional_price_breakdown___both'

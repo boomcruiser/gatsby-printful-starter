@@ -114,7 +114,6 @@ exports.createResolvers = ({ createResolvers, schema }) => {
 		},
 		
 		PrintfulVariantOptions: {
-			// Modify birthday resolver so that it uses 1970-01-01 as default date
 			value: {
 				resolve(source, args, context, info) {
 					// original resolver available as "info.originalResolver"

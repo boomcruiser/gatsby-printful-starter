@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useToasts } from 'react-toast-notifications';
-import Header from '../components/header';
-import HeaderAlert from '../components/headerAlert';
 import Layout from '../layout';
 
 const portalId = process.env.GATSBY_PORTAL_ID;
