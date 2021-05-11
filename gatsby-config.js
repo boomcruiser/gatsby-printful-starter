@@ -3,7 +3,8 @@ require('dotenv').config({
 });
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Store'
+		title: 'Gatsby Printful Starter',
+		siteUrl: `https://getdatshii.com`,
 	},
 	plugins: [
 		'gatsby-plugin-image',
