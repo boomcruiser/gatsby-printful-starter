@@ -89,6 +89,7 @@ module.exports = {
             },
         },
 
-		`gatsby-plugin-graphql-codegen`
+		`gatsby-plugin-graphql-codegen`,
+		`gatsby-plugin-gatsby-cloud`
 	]
 };
