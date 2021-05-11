@@ -7050,13 +7050,10 @@ export type MainPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type MainPageQuery = { allPrintfulProduct: { nodes: Array<(
-      Pick<PrintfulProduct, 'id' | 'name' | 'thumbnail_url' | 'variantOptions' | 'variantModels'>
-      & { productImage?: Maybe<{ childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }>, variants?: Maybe<Array<Maybe<(
-        Pick<PrintfulVariant, 'currency' | 'id' | 'name' | 'sku' | 'slug' | 'sync_product_id' | 'synced' | 'retail_price'>
-        & { catalogVariant?: Maybe<Pick<PrintfulCatalogVariant, 'color' | 'color_code' | 'id' | 'image' | 'size' | 'price' | 'retail_price' | 'in_stock'>>, variantImage?: Maybe<{ childImageSharp?: Maybe<(
-            Pick<ImageSharp, 'gatsbyImageData'>
-            & { fixed?: Maybe<Pick<ImageSharpFixed, 'src'>> }
-          )> }>, product?: Maybe<Pick<PrintfulVariantProduct, 'image' | 'name' | 'product_id' | 'variant_id'>> }
+      Pick<PrintfulProduct, 'id' | 'name' | 'variantOptions' | 'variantModels'>
+      & { variants?: Maybe<Array<Maybe<(
+        Pick<PrintfulVariant, 'currency' | 'id' | 'name' | 'retail_price'>
+        & { catalogVariant?: Maybe<Pick<PrintfulCatalogVariant, 'color' | 'size' | 'retail_price' | 'in_stock'>>, variantImage?: Maybe<{ childImageSharp?: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
       )>>> }
     )> }, allMdx: (
     Pick<MdxConnection, 'totalCount'>

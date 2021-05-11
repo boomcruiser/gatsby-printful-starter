@@ -16,47 +16,24 @@ const pageQuery = graphql`
 			nodes {
 				id
 				name
-				thumbnail_url
-				productImage {
-					childImageSharp {
-						gatsbyImageData(layout: FULL_WIDTH)
-					}
-				}
 				variantOptions
 				variantModels
 				variants {
 					currency
 					id
 					name
-					sku
-					slug
-					sync_product_id
-					synced
 					retail_price
 					catalogVariant {
 						color
-						color_code
-						id
-						image
 						size
-						price
 						retail_price
 						in_stock
 					}
 					variantImage {
 						childImageSharp {
-							gatsbyImageData(layout: FULL_WIDTH)
-							fixed{
-								src
-							}
+							gatsbyImageData(layout: FULL_WIDTH,placeholder: BLURRED)
 						}
 					}
-					product {
-						image
-						name
-						product_id
-						variant_id
-					} 
 					
 				}
 			}

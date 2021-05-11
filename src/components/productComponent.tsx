@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction, useContext, useState, useEffect } from 'react';
-import { GatsbyImage as Img, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage as Img, getImage, getSrc } from 'gatsby-plugin-image';
 // import { ProductNode } from '../types';
 import * as styles from './productStyle.module.css'
 import { SelectedVariantContext } from '../context/selectedVariantProvider';
@@ -17,6 +17,7 @@ const ProductComponent: React.FC<{ product: ProductNode }> = ({ product }) => {
 	const [options, setOptions] = useState({ color: null, size: null })
 	const sizeOptions = product?.variantOptions['size'];
 	const colorOptions = product?.variantOptions['color'];
+	const selectedVariantImageSrc = selectedVariant && getSrc(selectedVariant.variantImage as any)
 	useEffect(() => {
 		setSelectedVariant(product.variants[0])
 		setOptions({
@@ -105,7 +106,7 @@ const ProductComponent: React.FC<{ product: ProductNode }> = ({ product }) => {
 							data-item-price={selectedVariant.retail_price}
 							data-item-url="/"
 							data-item-name={selectedVariant.name}
-							data-item-image={selectedVariant.variantImage.childImageSharp.fixed.src}
+							data-item-image={selectedVariantImageSrc}
 							{...variantNames}
 							type="submit">
 							Buy now
@@ -117,7 +118,7 @@ const ProductComponent: React.FC<{ product: ProductNode }> = ({ product }) => {
 							data-item-price={selectedVariant.retail_price}
 							data-item-url="/"
 							data-item-name={selectedVariant.name}
-							data-item-image={selectedVariant.variantImage.childImageSharp.fixed.src}
+							data-item-image={selectedVariantImageSrc}
 							{...variantNames}
 							onClick={addToBag}
 						// data-autopop={true}

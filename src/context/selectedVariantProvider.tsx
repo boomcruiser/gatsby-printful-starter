@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ProductVariant } from '../components/productComponent';
+import { ProductVariant } from '../types';
 export const SelectedVariantContext = React.createContext<{ selectedVariant: ProductVariant | null, setSelectedVariant: React.Dispatch<ProductVariant | null> }>({
     selectedVariant: null,
     setSelectedVariant: null
