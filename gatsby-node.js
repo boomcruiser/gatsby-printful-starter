@@ -1,6 +1,6 @@
 
 const groupBy = ({acc, key, curr,supergroupKey,filterKeys,additionalProperties}) => {
-	const supergroup = acc[supergroupKey] ?? {};
+	const supergroup = acc[supergroupKey] || {};
 	const group = supergroup[key] || {};
 	const filterArray = filterKeys.reduce((filterObj,currentKey)=>{
 		filterObj[currentKey] = curr[currentKey]
@@ -24,7 +24,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
 							type: `PrintfulCatalogVariant`,
 						  })
 						  const keys = [];
-						//   acc[curr.id] = acc[curr.id] ?? [];
+						//   acc[curr.id] = acc[curr.id] || [];
 						  if (catalogVariant.color){
 							  keys.push(catalogVariant.color);
 							//   /acc[curr.id] = {...acc[curr.id],color:catalogVariant.color};
@@ -53,7 +53,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
 							type: `PrintfulCatalogVariant`,
 						  })
 						  if (catalogVariant.color && catalogVariant.size){
-							acc[catalogVariant.size] = acc[catalogVariant.size] ?? []
+							acc[catalogVariant.size] = acc[catalogVariant.size] || []
 							acc[catalogVariant.size] = [...acc[catalogVariant.size],{color:catalogVariant.color,id:curr.id}	]
 						}
 						 
@@ -75,7 +75,7 @@ exports.createResolvers = ({ createResolvers, schema }) => {
 							type: `PrintfulCatalogVariant`,
 						  })
 						  if (catalogVariant.size && catalogVariant.color ){
-							acc[catalogVariant.color] = acc[catalogVariant.color] ?? []
+							acc[catalogVariant.color] = acc[catalogVariant.color] || []
 							acc[catalogVariant.color] = [...acc[catalogVariant.color],{size:catalogVariant.size,id:curr.id}]
 						}
 						 
