@@ -90,6 +90,7 @@ module.exports = {
         },
 
 		`gatsby-plugin-graphql-codegen`,
-		`gatsby-plugin-gatsby-cloud`
+		`gatsby-plugin-gatsby-cloud`,
+		`gatsby-plugin-react-helmet`
 	]
 };

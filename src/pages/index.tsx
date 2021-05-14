@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
 
 	return (
 
-		<Layout slug="">
+		<Layout slug="" pageTitle="GetDatShii - Best Online Meme Store">
 
 
 			<section className="grid grid-cols-12">

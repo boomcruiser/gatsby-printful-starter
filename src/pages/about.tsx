@@ -105,7 +105,7 @@ export default function AboutPage(props) {
 
 
     return (
-        <Layout slug="about">
+        <Layout slug="about" pageTitle="About Us">
             <div className="py-12   ">
                 <TechStack />
                 <RepoDetails />

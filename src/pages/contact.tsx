@@ -142,7 +142,7 @@ const ContactForm = () => {
 export default function Contact() {
 
     return (
-        <Layout slug="contact">
+        <Layout slug="contact" pageTitle="Contact Us">
             <ContactForm />
         </Layout>
     )
